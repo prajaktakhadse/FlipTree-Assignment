@@ -1,0 +1,14 @@
+package com.movie.service;
+
+import java.util.List;
+
+import com.movie.model.Movie;
+
+public interface MovieService {
+   public Movie saveMovie(Movie movie);
+   
+   public List<Movie> getAllMovie()throws MovieException;
+   
+   public Movie updateMovieRating(Integer movie_Id ,String rating) throws MovieException;
+   
+}

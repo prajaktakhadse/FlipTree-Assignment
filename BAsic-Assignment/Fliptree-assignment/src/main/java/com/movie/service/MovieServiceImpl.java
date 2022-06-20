@@ -1,0 +1,52 @@
+package com.movie.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.movie.exception.MovieNotFound;
+import com.movie.model.Movie;
+import com.movie.repository.MovieRepo;
+
+@Service
+public class MovieServiceImpl implements MovieService {
+	
+	@Autowired
+	private MovieRepo movieRepo ;
+
+	@Override
+	public Movie saveMovie(Movie movie) {
+		return 	movieRepo.save(movie);
+	}
+
+	@Override
+	public List<Movie> getAllMovie() throws MovieNotFound {
+	List<Movie> movielist = movieRepo.findAll();
+	if(movielist.size() > 0 ) {
+		return movielist;
+	}
+	else {
+		throw new MovieNotFound("Movie not found ..!");
+	}
+		
+	}
+
+	@Override
+	public Movie updateMovieRating(Integer movie_Id, String rating) throws MovieNotFound {
+		 Optional<Movie> opt = movieRepo.findById(movie_Id);
+		 
+		 if(opt.isPresent()) {
+			 Movie  existMovie = opt.get();
+			 existMovie.setRating_name(rating);
+			 return movieRepo.save(existMovie);
+		 }
+		 else {
+			 throw new MovieNotFound("Movie not found ..!");
+		 }
+		 
+		
+	}
+
+}

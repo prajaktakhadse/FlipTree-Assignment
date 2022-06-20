@@ -1,0 +1,18 @@
+package com.movie.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.model.repository.MovieRepo;
+import com.movie.model.Movie;
+
+public class MovieServiceImpl implements MovieService {
+	
+	@Autowired
+	private MovieRepo movieRepo ;
+
+	@Override
+	public Movie saveMovie(Movie movie) {
+		return 	movieRepo.save(movie);
+	}
+
+}

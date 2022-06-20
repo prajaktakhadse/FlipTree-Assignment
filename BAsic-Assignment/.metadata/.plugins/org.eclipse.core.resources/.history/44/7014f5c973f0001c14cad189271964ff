@@ -1,0 +1,10 @@
+package com.movie.exception;
+
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+public class MovieIdNotFound extends RuntimeException {
+   public MovieAlreadyFound(String message) {
+	   super(message);
+   }
+}

@@ -1,0 +1,1829 @@
+{
+	"info": {
+		"_postman_id": "91d01c6e-1afb-49a2-b3ec-7450584d79cb",
+		"name": "FlipTree-PostMan-Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20203704"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n      \"movie_id\": 13,\r\n      \"title\": \"Captain America: Civil War\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2016,\r\n      \"running_time\": 147,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2016\",\r\n      \"budget\": \"250,00,000\",\r\n      \"gross\": \"408,084,349\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies/2/?rating_name=PG-37",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n      \"movie_id\": 13,\r\n      \"title\": \"Captain America: Civil War\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2016,\r\n      \"running_time\": 147,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2016\",\r\n      \"budget\": \"250,00,000\",\r\n      \"gross\": \"408,084,349\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies/2/?rating_name=PG-37",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies",
+						"2",
+						""
+					],
+					"query": [
+						{
+							"key": "rating_name",
+							"value": "PG-37"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies/2/?rating_name=PG-36",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n      \"movie_id\": 13,\r\n      \"title\": \"Captain America: Civil War\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2016,\r\n      \"running_time\": 147,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2016\",\r\n      \"budget\": \"250,00,000\",\r\n      \"gross\": \"408,084,349\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies/2/?rating_name=PG-36",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies",
+						"2",
+						""
+					],
+					"query": [
+						{
+							"key": "rating_name",
+							"value": "PG-36"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies/2/?rating_name=PG-36",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n      \"movie_id\": 13,\r\n      \"title\": \"Captain America: Civil War\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2016,\r\n      \"running_time\": 147,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2016\",\r\n      \"budget\": \"250,00,000\",\r\n      \"gross\": \"408,084,349\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies/2/?rating_name=PG-36",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies",
+						"2",
+						""
+					],
+					"query": [
+						{
+							"key": "rating_name",
+							"value": "PG-36"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies/2/PG-37",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n      \"movie_id\": 13,\r\n      \"title\": \"Captain America: Civil War\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2016,\r\n      \"running_time\": 147,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2016\",\r\n      \"budget\": \"250,00,000\",\r\n      \"gross\": \"408,084,349\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies/2/PG-37",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies",
+						"2",
+						"PG-37"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies/25/PG-36",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n      \"movie_id\": 13,\r\n      \"title\": \"Captain America: Civil War\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2016,\r\n      \"running_time\": 147,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2016\",\r\n      \"budget\": \"250,00,000\",\r\n      \"gross\": \"408,084,349\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies/25/PG-36",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies",
+						"25",
+						"PG-36"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies/25/PG-36",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n      \"movie_id\": 13,\r\n      \"title\": \"Captain America: Civil War\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2016,\r\n      \"running_time\": 147,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2016\",\r\n      \"budget\": \"250,00,000\",\r\n      \"gross\": \"408,084,349\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies/25/PG-36",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies",
+						"25",
+						"PG-36"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies/25/PG-36",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n      \"movie_id\": 13,\r\n      \"title\": \"Captain America: Civil War\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2016,\r\n      \"running_time\": 147,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2016\",\r\n      \"budget\": \"250,00,000\",\r\n      \"gross\": \"408,084,349\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies/25/PG-36",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies",
+						"25",
+						"PG-36"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies/2/PG-36",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n      \"movie_id\": 13,\r\n      \"title\": \"Captain America: Civil War\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2016,\r\n      \"running_time\": 147,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2016\",\r\n      \"budget\": \"250,00,000\",\r\n      \"gross\": \"408,084,349\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies/2/PG-36",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies",
+						"2",
+						"PG-36"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n      \"movie_id\": 13,\r\n      \"title\": \"Captain America: Civil War\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2016,\r\n      \"running_time\": 147,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2016\",\r\n      \"budget\": \"250,00,000\",\r\n      \"gross\": \"408,084,349\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n      \"movie_id\": 13,\r\n      \"title\": \"Captain America: Civil War\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2016,\r\n      \"running_time\": 147,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2016\",\r\n      \"budget\": \"250,00,000\",\r\n      \"gross\": \"408,084,349\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 19,\r\n      \"title\": \"Avengers: Infinity War\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2018,\r\n      \"running_time\": 0,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 4, 2018\",\r\n      \"budget\": \"tbd\",\r\n      \"gross\": \"tbd\",\r\n      \"time_stamp\": \"2018-01-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"movie_id\": 18,\r\n      \"title\": \"Black Panther\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2018,\r\n      \"running_time\": 0,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"February 16, 2018\",\r\n      \"budget\": \"tbd\",\r\n      \"gross\": \"tbd\",\r\n      \"time_stamp\": \"2018-01-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"movie_id\": 17,\r\n      \"title\": \"Thor: Ragnarok\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2017,\r\n      \"running_time\": 130,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"November 3, 2017\",\r\n      \"budget\": \"180,000,000\",\r\n      \"gross\": \"tbd\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 16,\r\n      \"title\": \"Spider-Man: Homecoming\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2017,\r\n      \"running_time\": 133,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"July 7, 2017\",\r\n      \"budget\": \"175,000,000\",\r\n      \"gross\": \"314,057,748\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 11,\r\n      \"title\": \"Avengers: Age of Ultron\",\r\n      \"phase\": \"Phase Two\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2015,\r\n      \"running_time\": 141,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 1, 2015\",\r\n      \"budget\": \"250,000,000\",\r\n      \"gross\": \"458,991,599\",\r\n      \"time_stamp\": \"2015-12-07\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"movie_id\": 14,\r\n      \"title\": \"Doctor Strange\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2016,\r\n      \"running_time\": 115,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"November 4, 2016\",\r\n      \"budget\": \"165,000,000\",\r\n      \"gross\": \"232,641,920\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 4,\r\n      \"title\": \"Thor\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2011,\r\n      \"running_time\": 115,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray + DVD\",\r\n      \"number_discs\": 2,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2011\",\r\n      \"budget\": \"150,000,000\",\r\n      \"gross\": \"181,015,141\",\r\n      \"time_stamp\": \"2011-10-30\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n      \"movie_id\": 13,\r\n      \"title\": \"Captain America: Civil War\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2016,\r\n      \"running_time\": 147,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2016\",\r\n      \"budget\": \"250,00,000\",\r\n      \"gross\": \"408,084,349\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 12,\r\n      \"title\": \"Ant-Man\",\r\n      \"phase\": \"Phase Two\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2015,\r\n      \"running_time\": 132,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"1.85:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"July 17, 2015\",\r\n      \"budget\": \"130,000,000\",\r\n      \"gross\": \"179,017,481\",\r\n      \"time_stamp\": \"2015-12-07\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"movie_id\": 10,\r\n      \"title\": \"Guardians of the Galaxy\",\r\n      \"phase\": \"Phase Two\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2014,\r\n      \"running_time\": 121,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"August 1, 2014\",\r\n      \"budget\": \"170,000,000\",\r\n      \"gross\": \"333,130,696\",\r\n      \"time_stamp\": \"2014-12-07\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"movie_id\": 20,\r\n      \"title\": \"Ant-Man and the Wasp\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2018,\r\n      \"running_time\": 0,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"July 6, 2018\",\r\n      \"budget\": \"tbd\",\r\n      \"gross\": \"tbd\",\r\n      \"time_stamp\": \"2018-01-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n      \"movie_id\": 9,\r\n      \"title\": \"Captain America: The Winter Soldier\",\r\n      \"phase\": \"Phase Two\",\r\n      \"edition\": \"Blu-ray Edition\",\r\n      \"release_year\": 2014,\r\n      \"running_time\": 136,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"April 4, 2014\",\r\n      \"budget\": \"170,000,000\",\r\n      \"gross\": \"259,746,958\",\r\n      \"time_stamp\": \"2014-09-19\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 8,\r\n      \"title\": \"Thor: The Dark World\",\r\n      \"phase\": \"Phase Two\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2013,\r\n      \"running_time\": 112,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 2,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"November 8, 2013\",\r\n      \"budget\": \"170,000,000\",\r\n      \"gross\": \"206,360,018\",\r\n      \"time_stamp\": \"2014-03-04\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"movie_id\": 7,\r\n      \"title\": \"Iron Man 3\",\r\n      \"phase\": \"Phase Two\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2015,\r\n      \"running_time\": 130,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray + DVD\",\r\n      \"number_discs\": 2,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 3, 2013\",\r\n      \"budget\": \"200,000,000\",\r\n      \"gross\": \"408,992,272\",\r\n      \"time_stamp\": \"2015-05-03\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"movie_id\": 15,\r\n      \"title\": \"Guardians of the Galaxy Vol. 2\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2017,\r\n      \"running_time\": 136,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 5, 2017\",\r\n      \"budget\": \"200,000,000\",\r\n      \"gross\": \"389,213,281\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 6,\r\n      \"title\": \"Avengers, The\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2012,\r\n      \"running_time\": 143,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray + DVD\",\r\n      \"number_discs\": 2,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"1.85:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 4, 2012\",\r\n      \"budget\": \"220,000,000\",\r\n      \"gross\": \"623,279,547\",\r\n      \"time_stamp\": \"2012-10-20\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 5,\r\n      \"title\": \"Captain America\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2011,\r\n      \"running_time\": 124,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray + DVD\",\r\n      \"number_discs\": 2,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"July 22, 2011\",\r\n      \"budget\": \"140,000,000\",\r\n      \"gross\": \"176,636,816\",\r\n      \"time_stamp\": \"2011-10-30\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"movie_id\": 3,\r\n      \"title\": \"Iron Man 2\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2015,\r\n      \"running_time\": 124,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 7, 2010\",\r\n      \"budget\": \"200,000,000\",\r\n      \"gross\": \"312,057,433\",\r\n      \"time_stamp\": \"2015-05-03\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"movie_id\": 2,\r\n      \"title\": \"The Incredible Hulk\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2008,\r\n      \"running_time\": 112,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"DVD\",\r\n      \"number_discs\": 3,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"June 13, 2008\",\r\n      \"budget\": \"150,000,000\",\r\n      \"gross\": \"134,518,390\",\r\n      \"time_stamp\": \"2008-10-21\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 1,\r\n      \"title\": \"Iron Man\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2015,\r\n      \"running_time\": 126,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 2, 2008\",\r\n      \"budget\": \"140,000,000\",\r\n      \"gross\": \"318,298,180\",\r\n      \"time_stamp\": \"2015-05-03\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"title\": \"Spider-Man: Homecoming\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2017,\r\n      \"running_time\": 133,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"July 7, 2017\",\r\n      \"budget\": \"175,000,000\",\r\n      \"gross\": \"314,057,748\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"title\": \"Guardians of the Galaxy Vol. 2\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2017,\r\n      \"running_time\": 136,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 5, 2017\",\r\n      \"budget\": \"200,000,000\",\r\n      \"gross\": \"389,213,281\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"title\": \"Doctor Strange\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2016,\r\n      \"running_time\": 115,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"November 4, 2016\",\r\n      \"budget\": \"165,000,000\",\r\n      \"gross\": \"232,641,920\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"title\": \"Captain America: Civil War\",\r\n      \"phase\": \"Phase Three\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2016,\r\n      \"running_time\": 147,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.39:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2016\",\r\n      \"budget\": \"250,00,000\",\r\n      \"gross\": \"408,084,349\",\r\n      \"time_stamp\": \"2017-11-09\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \r\n      \"title\": \"Ant-Man\",\r\n      \"phase\": \"Phase Two\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2015,\r\n      \"running_time\": 132,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"1.85:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"July 17, 2015\",\r\n      \"budget\": \"130,000,000\",\r\n      \"gross\": \"179,017,481\",\r\n      \"time_stamp\": \"2015-12-07\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\r\n\r\n     \"title\": \"Avengers: Age of Ultron\",\r\n      \"phase\": \"Phase Two\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2015,\r\n      \"running_time\": 141,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 1, 2015\",\r\n      \"budget\": \"250,000,000\",\r\n      \"gross\": \"458,991,599\",\r\n      \"time_stamp\": \"2015-12-07\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\r\n\r\n    \"title\": \"Guardians of the Galaxy\",\r\n      \"phase\": \"Phase Two\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2014,\r\n      \"running_time\": 121,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"August 1, 2014\",\r\n      \"budget\": \"170,000,000\",\r\n      \"gross\": \"333,130,696\",\r\n      \"time_stamp\": \"2014-12-07\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\r\n\r\n     \"title\": \"Captain America: The Winter Soldier\",\r\n      \"phase\": \"Phase Two\",\r\n      \"edition\": \"Blu-ray Edition\",\r\n      \"release_year\": 2014,\r\n      \"running_time\": 136,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"April 4, 2014\",\r\n      \"budget\": \"170,000,000\",\r\n      \"gross\": \"259,746,958\",\r\n      \"time_stamp\": \"2014-09-19\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\r\n\r\n     \"title\": \"Thor: The Dark World\",\r\n      \"phase\": \"Phase Two\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2013,\r\n      \"running_time\": 112,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 2,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"November 8, 2013\",\r\n      \"budget\": \"170,000,000\",\r\n      \"gross\": \"206,360,018\",\r\n      \"time_stamp\": \"2014-03-04\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\r\n      \"title\": \"Iron Man 3\",\r\n      \"phase\": \"Phase Two\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2015,\r\n      \"running_time\": 130,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray + DVD\",\r\n      \"number_discs\": 2,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 3, 2013\",\r\n      \"budget\": \"200,000,000\",\r\n      \"gross\": \"408,992,272\",\r\n      \"time_stamp\": \"2015-05-03\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"movie_id\": 6,\r\n      \"title\": \"Avengers, The\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Science Fiction\",\r\n      \"release_year\": 2012,\r\n      \"running_time\": 143,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray + DVD\",\r\n      \"number_discs\": 2,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"1.85:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 4, 2012\",\r\n      \"budget\": \"220,000,000\",\r\n      \"gross\": \"623,279,547\",\r\n      \"time_stamp\": \"2012-10-20\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"movie_id\": 5,\r\n      \"title\": \"Captain America\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2011,\r\n      \"running_time\": 124,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray + DVD\",\r\n      \"number_discs\": 2,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"July 22, 2011\",\r\n      \"budget\": \"140,000,000\",\r\n      \"gross\": \"176,636,816\",\r\n      \"time_stamp\": \"2011-10-30\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"movie_id\": 4,\r\n      \"title\": \"Thor\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2011,\r\n      \"running_time\": 115,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray + DVD\",\r\n      \"number_discs\": 2,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2011\",\r\n      \"budget\": \"150,000,000\",\r\n      \"gross\": \"181,015,141\",\r\n      \"time_stamp\": \"2011-10-30\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 3,\r\n      \"title\": \"Iron Man 2\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2015,\r\n      \"running_time\": 124,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 7, 2010\",\r\n      \"budget\": \"200,000,000\",\r\n      \"gross\": \"312,057,433\",\r\n      \"time_stamp\": \"2015-05-03\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"movie_id\": 2,\r\n      \"title\": \"The Incredible Hulk\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2008,\r\n      \"running_time\": 112,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"DVD\",\r\n      \"number_discs\": 3,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"June 13, 2008\",\r\n      \"budget\": \"150,000,000\",\r\n      \"gross\": \"134,518,390\",\r\n      \"time_stamp\": \"2008-10-21\"\r\n    }\r\n    \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"movie_id\": 1,\r\n      \"title\": \"Iron Man\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2015,\r\n      \"running_time\": 126,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 2, 2008\",\r\n      \"budget\": \"140,000,000\",\r\n      \"gross\": \"318,298,180\",\r\n      \"time_stamp\": \"2015-05-03\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 4,\r\n      \"title\": \"Thor\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2011,\r\n      \"running_time\": 115,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray + DVD\",\r\n      \"number_discs\": 2,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2011\",\r\n      \"budget\": \"150,000,000\",\r\n      \"gross\": \"181,015,141\",\r\n      \"time_stamp\": \"2011-10-30\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 4,\r\n      \"title\": \"Thor\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2011,\r\n      \"running_time\": 115,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray + DVD\",\r\n      \"number_discs\": 2,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2011\",\r\n      \"budget\": \"150,000,000\",\r\n      \"gross\": \"181,015,141\",\r\n      \"time_stamp\": \"2011-10-30\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 4,\r\n      \"title\": \"Thor\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2011,\r\n      \"running_time\": 115,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray + DVD\",\r\n      \"number_discs\": 2,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 6, 2011\",\r\n      \"budget\": \"150,000,000\",\r\n      \"gross\": \"181,015,141\",\r\n      \"time_stamp\": \"2011-10-30\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 5,\r\n      \"title\": \"Captain America\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2011,\r\n      \"running_time\": 124,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray + DVD\",\r\n      \"number_discs\": 2,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"July 22, 2011\",\r\n      \"budget\": \"140,000,000\",\r\n      \"gross\": \"176,636,816\",\r\n      \"time_stamp\": \"2011-10-30\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 3,\r\n      \"title\": \"Iron Man 2\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2015,\r\n      \"running_time\": 124,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 7, 2010\",\r\n      \"budget\": \"200,000,000\",\r\n      \"gross\": \"312,057,433\",\r\n      \"time_stamp\": \"2015-05-03\"\r\n    }\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"movie_id\": 2,\r\n      \"title\": \"The Incredible Hulk\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2008,\r\n      \"running_time\": 112,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"DVD\",\r\n      \"number_discs\": 3,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"June 13, 2008\",\r\n      \"budget\": \"150,000,000\",\r\n      \"gross\": \"134,518,390\",\r\n      \"time_stamp\": \"2008-10-21\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/Movie/movies",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"movie_id\": 1,\r\n      \"title\": \"Iron Man\",\r\n      \"phase\": \"Phase One: Avengers Assembled\",\r\n      \"category_name\": \"Action\",\r\n      \"release_year\": 2015,\r\n      \"running_time\": 126,\r\n      \"rating_name\": \"PG-13\",\r\n      \"disc_format_name\": \"Blu-ray\",\r\n      \"number_discs\": 1,\r\n      \"viewing_format_name\": \"Widescreen\",\r\n      \"aspect_ratio_name\": \"2.35:1\",\r\n      \"status\": 1,\r\n      \"release_date\": \"May 2, 2008\",\r\n      \"budget\": \"140,000,000\",\r\n      \"gross\": \"318,298,180\",\r\n      \"time_stamp\": \"2015-05-03\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Movie/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Movie",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

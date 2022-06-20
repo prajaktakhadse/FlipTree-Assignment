@@ -1,0 +1,55 @@
+package com.movie.model;
+
+import javax.annotation.Generated;
+//
+//"movie_id": 1,
+//"title": "Iron Man",
+//"phase": "Phase One: Avengers Assembled",
+//"category_name": "Action",
+//"release_year": 2015,
+//"running_time": 126,
+//"rating_name": "PG-13",
+//"disc_format_name": "Blu-ray",
+//"number_discs": 1,
+//"viewing_format_name": "Widescreen",
+//"aspect_ratio_name": "2.35:1",
+//"status": 1,
+//"release_date": "May 2, 2008",
+//"budget": "140,000,000",
+//"gross": "318,298,180",
+//"time_stamp": "2015-05-03"
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Movie {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+   private Integer movie_id;
+   private String title ;
+   private String phase ;
+   private String category_name ;
+   private Integer release_year ;
+   private Integer running_time ;
+   private String rating_name ;
+   private String disc_format_name;
+   private Integer number_discs ;
+   private String aspect_ratio_name ;
+   private Integer status ;
+   private String release_date;
+   private String budget ;
+   private String gross ;
+   private String time_stamp ; 
+	
+
+   
+}
